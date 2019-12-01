@@ -1,0 +1,29 @@
+#lastSentence{
+	font-size: 25px;
+	color: orangered;
+	font-weight: 200;
+}
+h1{
+	font-size: 60px;
+}
+
+a, a:active{
+	color: orangered;
+}
+
+a:hover{
+	color: goldenrod;
+}
+
+body{
+	font-family: Didot, Helvetica, sans-serif;
+	
+	text-align: center;
+}
+
+
+
+@charset "UTF-8";
+
+@media (max-width : 936px ){
+}

@@ -1,0 +1,318 @@
+/* google fonts */
+/*@import url('https://fonts.googleapis.com/css?family=Monda:400,700|Raleway&display=swap');
+
+
+   CSS RESET
+
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END CSS RESET */
+
+/* BEGIN CUSTOM STYLESHEET */
+
+html {
+    width: 100%;
+    
+}
+
+body{
+    width: 100%;
+    background-color: #EFEFEF;
+}
+
+h1 {
+    font-size: 5.5em;
+    font-weight: 700;
+    font-family: 'News Cycle', sans-serif;
+    color: #bf6c07;
+
+}
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'News Cycle', sans-serif;
+    text-align: center;
+}
+h3 {
+    font-weight: 700;
+    font-size: 1.5em;
+    font-family: 'News Cycle', sans-serif;
+
+}
+h4 {
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: 'News Cycle', sans-serif;
+
+}
+
+p {
+    font-family: 'News Cycle', sans-serif;
+    line-height: 140%;
+
+}
+
+
+header {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 33% 67%;
+    align-items: baseline;
+    background-color: #ABADA9;
+    padding-bottom: 20px;
+    box-shadow: 3px 0 3px 3px black;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    background-color: #EFEFEF;
+    padding-top: 20px;
+    width: 100%;
+}
+
+#splash-image {
+    max-width: 90%;
+    object-fit: contain;
+}
+
+#lastSentence{
+    margin: auto;
+    text-align: center;
+	font-size: 3em;
+	color: #bf6c07;
+	font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'News Cycle', sans-serif;
+    color: #bf6c07;
+
+}
+a:active {
+
+}
+
+a:focus {
+    outline: green dashed 1px;
+}
+
+a:hover{
+    background-color: #bf6c07;
+	color: #EFEFEF;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    font-size: .8em;
+}
+
+.nav-link {
+    font-family: 'News Cycle', sans-serif;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 10px;
+    background-color: black;
+    color: #EFEFEF;
+    border-radius: 3px;
+}
+.nav-link:active  {
+    
+}
+.nav-link:focus  {
+    
+}
+
+.nav-link:hover  {
+    color: #bf6c07;
+    background-color: #ABADA9;
+}
+
+
+#index-welcome-grid {
+    margin: auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+#tagline {
+    margin-top: 10px;
+}
+
+#splash-image {
+    margin-top: 15px;
+}
+
+.tips-container {
+    margin: auto;
+    width: 85%;
+}
+
+.tip {
+    margin-top: 30px;
+    width: 100%;
+}
+.tip-head {
+
+}
+
+.tip-grid {
+    margin-top: 15px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.tip-pic {
+    max-width: 90%;
+    margin-top: 0;
+    max-height: 300px;
+    object-fit: fill;
+}
+
+.submit-tip-container {
+    margin-top: 30px;
+}
+.submitTip{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+    row-gap: 10px;
+    margin-bottom: 30px;
+}
+
+textarea, input {
+    width: calc(100% - 6px);
+    resize: vertical;
+}
+
+label {
+    white-space: nowrap;
+    width: min-content;
+}
+
+.submit-button {
+    grid-column: 1/3;
+}
+
+#glampsites-container {
+    margin: auto;
+    width: 60%;
+    
+}
+
+.listing-head {
+    text-align: center;
+}
+
+.glampsite-listing {
+    margin-top: 20px;
+}
+
+.glampsite-listing > article {
+    margin-top: 15px;
+}
+
+.glampsite-listing > article > p{
+    margin-top: 5px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+
+@media (max-width: 47em ){
+    h1 {
+        font-size: 3em;
+    }
+    header {
+        grid-template-columns: 100%;
+        row-gap: 10px;
+        text-align: center;
+        position: relative;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    nav {
+        margin-top: 5px;
+        justify-content: center;
+    }
+    .tip-grid{
+        grid-template-columns: 100%;
+    }
+    .tip-pic{
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .tip-head{
+        text-align: center;
+    }
+    #glampsites-container {
+        width: 90%;
+    }
+    .submitTip {
+        width: 100%;
+    }
+}
+

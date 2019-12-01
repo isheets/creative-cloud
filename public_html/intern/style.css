@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Hind|Share+Tech+Mono|Nunito+Sans:700');
+/*css reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: #F8F8FF;
+}
+ol, ul {
+	list-style: none;
+}
+/*end reset*/
+
+img {
+	height: 20%;
+	width: 20%;
+}
+
+h1 {
+	font-family: Nunito Sans, sans-serif;
+	font-size: 250%;
+}
+h2 {
+	font-family: Nunito Sans, sans-serif;
+	font-size: 150%;
+}
+h3 {
+	font-family: Nunito Sans, sans-serif;
+	font-size: 120%;
+	text-align: center;
+}
+p, li {
+	font-family: Hind, sans-serif;
+	line-height: 1.2;
+}
+
+a {
+	padding-right: 5px;
+	padding-left: 5px;
+	color: black;
+	text-decoration: none;
+	font-family: Nunito Sans, monospace;
+	box-shadow: 2px 2px 0 0 black;
+	border: 1px solid black;
+}
+p > a {
+	padding-right: 5px;
+	padding-left: 5px;
+	color: black;
+	margin-right: 2px;
+	text-decoration: none;
+	font-family: Nunito Sans, monospace;
+	box-shadow: 1px 1px 0 0 black;
+	margin-bottom: 10px;
+	border: 1px solid black;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	background-color: black;
+	color: white;
+	box-shadow: none;
+}
+
+a:active {
+	background-color: black;
+	color: white;
+}
+
+body {
+	width: 90%;
+	margin: auto;
+}
+
+#head-grid {
+	margin: auto;
+	margin-top: 2%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	border: 1px solid black;
+}
+#title {
+	padding: 15px;
+}
+#about {
+	border-left: 1px solid black;
+	padding: 15px;
+}
+
+#contact {
+	margin-top: 1%;
+}
+
+#link-grid {
+	width: 100%;
+	margin: auto;
+	margin-top: 0;
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+#portal {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.link {
+	padding: 15px;
+}
+
+.des {
+	margin-top: 15px;
+}
+
+@media only screen and (max-width: 1090px) {
+	body {
+		width: 99%;
+	}
+
+}
+
+@media only screen and (max-width: 850px) {
+
+		body {
+		width: 90%;
+	}
+
+	#head-grid {
+		grid-template-rows: auto auto;
+		grid-template-columns: 100%;
+	}
+
+	#about {
+		border-left: none;
+		border-top: 1px solid black;
+	}
+
+	#link-grid {
+		grid-template-columns: 100%;
+		grid-template-rows: auto auto auto;
+
+	}
+
+	#portal {
+		border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: none;
+	border-right: none;
+}
+
+}
+

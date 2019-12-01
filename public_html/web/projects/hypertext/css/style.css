@@ -1,0 +1,111 @@
+/* import consolidated google fonts */
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,400i|Josefin+Slab:700|Nova+Mono');
+/* class selector */
+.container {
+	max-width: 500px;
+	margin: auto;
+}
+/*id selector: move header along container to act as "progress bar" of sorts*/
+#one {
+	margin-left: -25px;
+}
+#two {
+	margin-left: 15px;
+}
+#three {
+	margin-left: 55px;
+}
+#four {
+	margin-left: 95px;
+}
+#five {
+	margin-left: 135px;
+}
+#six {
+	margin-left: 175px;
+}
+#seven {
+	margin-left: 215px;
+}
+#eight {
+	margin-left: 255px;
+}
+#nine {
+	margin-left: 295px;
+}
+#ten {
+	margin-left: 332.5px;
+}
+
+
+
+/* tag selector */
+header {
+	display: inline-block;
+	margin-bottom: 0px;
+}
+body {
+	font-family: 'Fira Sans', sans-serif;	
+	font-size: 15px;
+	background-image: url("../img/bg.svg");
+	background-size: 77.5px;
+	color: #293135;
+	opacity: .99;
+}
+
+p {
+
+	margin-top: 0px;
+	font-weight: 400;
+	line-height: 120%;
+	font-size: 1.2em;
+	background: rgba(208,190,159,1);
+	padding: 20px;
+	text-align: justify;
+	outline: 25px solid;
+	outline-color: rgba(255,255,255,1);
+	position: relative;
+	z-index: 1;
+}
+
+h1 {
+	border-top: 25px solid;
+	border-left: 25px solid;
+	border-right: 25px solid;
+	border-color: rgba(255,255,255, 1);
+	font-family: 'Josefin Slab', serif;
+	font-size: 4.5em;
+	background: rgba(208,190,159,1);
+	color: #57706E;
+	padding: 12px;
+	padding-bottom: 150px;
+	margin-bottom: 0px;
+	margin-top: 20px;
+	position: relative;
+	z-index: 2;
+} 
+
+a {
+	font-family: 'Nova Mono', monospace;
+	font-size: 1.5em;
+	line-height: 0%;
+}
+
+a:link {
+	color: rgba(255, 0, 0, 1);
+}
+
+a:visited {
+	color: rgba(255, 0, 0, 1);
+}
+
+a:hover {
+	color: #D0BE9F;
+	background: #293135;
+	padding: 5px;
+	padding-top: 0;
+}
+
+a:active {
+	color: rgba(255, 0, 0, 1);
+}

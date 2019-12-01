@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Mad Libs: Fall Break</title>
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+<!-- For fall break, I am going to LOCATION to see my NATIONALITY friend. She loves to make FOOD and play SPORT. Also, we like to smoke week and go VERB. It makes us really ADJECTIVE. I hope I don't forget to bring my NOUN.-->
+  <div class="container">
+
+    <header class="centered">
+      <h1>Mad Libs: Fall Break Plans</h1>
+    </header>
+
+    <section class = "centered">
+      <ul>
+        <li>location: <input type="text" id="location"></li>
+        <li>nationality: <input type="text" id="nationality"></li>
+        <li>food: <input type="text" id="food"></li>
+        <li>sport: <input type="text" id="sport"></li>
+        <li>verb: <input type="text" id="verb"></li>
+        <li>adjective: <input type="text" id="adjective"></li>
+        <li>noun: <input type="text" id="noun"></li>
+      </ul>
+    </section>
+    
+    <section>
+
+    <div class="centered">   
+      <button onclick="generate()" id="button">GENERATE</button>       
+    </div>
+
+    <div id="plan"></div>
+    </section>
+  </div>
+</body>
+</html>
