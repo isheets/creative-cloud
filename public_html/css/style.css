@@ -185,12 +185,13 @@ ul {
 	height: 100%;
 
 }
-ul[data-tabs] {
+
+.project-list {
 	list-style: none;
 }
 
-li {
-
+.project-thumb {
+	border: 1px solid yellow;
 }
 
 a {

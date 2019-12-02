@@ -11,7 +11,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
 //opens lightbox with content for requested project
 var openProjectContent = (e) => {
 
-    let projectClicked = e.srcElement.id;
+    console.log(e);
+
+    let projectClicked = null;
+
+    if(e.target.localName !== "li") {
+        for(let parent of e.path) {
+            if(parent.localName === "li") {
+                projectClicked = parent.id;
+            }
+        }
+    }
+    else {
+        projectClicked = e.srcElement.id;
+    }
+
     let contentToRender = null;
 
     switch(projectClicked) {
