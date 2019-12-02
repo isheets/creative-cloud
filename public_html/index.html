@@ -16,15 +16,20 @@
 		gtag('config', 'UA-133891394-1');
 	</script>
 
-	<!-- main js -->
-	<script src="js/script.js" defer></script>
+	<!-- lightbox project content js -->
+	<script src="./js/projects/twitter-emoji.js" defer></script>
+	<script src="./js/projects/syllabus-archive.js" defer></script>
+	<script src="./js/projects/habits.js" defer></script>
+	<script src="./js/projects/driving-sucks.js" defer></script>
+	<script src="./js/projects/finals-countdown.js" defer></script>
+
+	<!-- main script -->
+	<script src="./js/script.js" defer></script>
+
 
 	<!-- lightbox -->
 	<script src="js/lightbox/lightbox.js"></script>
 	<link rel="stylesheet" type="text/css" href="js/lightbox/lightbox.css" />
-
-	<!-- tabby -->
-	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12/dist/js/tabby.polyfills.min.js"></script>
 
 	<!-- css, viewport -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -38,7 +43,8 @@
 	</section>
 
 	<section id="links">
-		<h4><a href="mailto:isaac.sheets@colorado.edu" target="_blank" class="top-link">isaac.sheets@colorado.edu</a></h4>
+		<h4><a href="mailto:isaac.sheets@colorado.edu" target="_blank" class="top-link">isaac.sheets@colorado.edu</a>
+		</h4>
 		<h4><a href="https://github.com/isheets" class="top-link" target="_blank">GitHub</a></h4>
 
 		<h4><a href="img/resume.pdf" class="top-link" target="_blank">Resume</a></h4>
@@ -49,232 +55,18 @@
 		<h1>About me!</h1>
 		<p id="welcome">
 			I'm Isaac Sheets and my work is centered on mobile application development, front end
-			web development, and user experience + interface design. I'm currently attending the University of Colorado Boulder, and I will be
+			web development, and user experience + interface design. I'm currently attending the University of Colorado
+			Boulder, and I will be
 			graduating in December 2019 with a Bachelor of Science in Technology, Arts, and Media.
 		</p>
 	</section>
 
-	<section id="nav">
-		<ul data-tabs>
-			<li>
-				<a href="#twitter-emoji-cloud">TWITTER EMOJIS</a>
-			</li>
-			<li>
-				<a href="#syllabus-archive">CU SYLLABUS ARCHIVE</a>
-			</li>
-			<li>
-				<a href="#habits">HABITS</a>
-			</li>
-			<li>
-				<a href="#web">DRIVING SUCKS!</a>
-			</li>
-			<li>
-				<a href="#react">FINALS COUNTDOWN</a>
-			</li>
-		</ul>
-	</section>
-
-	<section id="content">
-		<article id="twitter-emoji-cloud" class="project-item">
-			<div>
-				<div class="project-overview">
-					<h1 class="project-title">TWITTER EMOJI CLOUD</h1>
-					<h3>Full Stack Data Project</h3>
-					<p class="project-caption">A group project that live-streamed data from the Twitter API and
-						showed various visualizations.
-					</p>
-				</div>
-				<div class="project-description">
-					<p>Twitter Emoji Cloud is a full-stack project that I developed with three classmates for a
-						course called Big Data Architecture. </p>
-					<p>We used Java to build an Apache Storm topology which processed raw data from the Twitter
-						Sample API to extract emojis from tweets and insert that data into a Cloud SQL database.
-						Most of my work was done in this area and when we completed the topology, I containerized it
-						using Docker and deployed to Google Kubernetes Engine.</p>
-					<p>We used Express.js to write a RESTful API which exposed our Google Cloud SQL data to the
-						front-end application. The API was deployed to Google App Engine.</p>
-					<p>Our front-end visualizations used a library called ZingChart to show which emojis were
-						trending on Twitter realtime and historically.</p>
-					<p>This project is no longer hosted due to the hosting costs associated with Google Cloud
-						Platform, but the code is fully accessible on GitHub. </p>
-				</div>
-
-				<div class="project-bullet-grid">
-					<div>
-						<h4>Key Features</h4>
-						<ul>
-							<li>Full-stack</li>
-							<li>Google Cloud Platform Deployment</li>
-							<li>GitHub Collaboration</li>
-							<li>Data visualizations</li>
-						</ul>
-					</div>
-					<div class="github-links">
-						<div id="app-links">
-							<a href="https://github.com/isheets/twitter-emoji-cloud" target="_blank">View on GitHub</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</article>
-		<article id="syllabus-archive" class="project-item">
-			<div>
-				<div class="project-overview">
-					<h1 class="project-title">CU SYLLABUS ARCHIVE</h1>
-					<h3>User Experience Design</h3>
-					<p class="project-caption">A group user experience design consulting project for the CU Student Services Portfolio Manager</p>
-				</div>
-				<div class="project-description">
-					<p>Throughout the Spring 2019 semester I worked with a team of two other students to research, design, and user test a new user experience for the CU Syllabus Archive for our client Jacie Moriyama, CU Student Services Portfolio Manager</p>
-					<p>My team's consoltation was necessary because the university wanted to provide a more valuable experience to students and faculty looking to view past syllabi for various courses.</p>
-					<p>We began our design process by analyzing the Syllabus Archive system that was currently in place and determining what changes would be useful. After this we created an initial prototype of the system in Adobe XD.</p>
-					<p>After prototyping, we interviewed a variety of CU faculty and students to get feedback on our design so that we could fine tune it to the needs of potential users.</p>
-					<p>We repeated the process of prototyping and user testing several times until we felt that our design addressed all the needs of the users and accomplished the initial design considerations we were provided with at the start of the project.</p>
-					<p>To finish the project, we distilled our findings into a design report and recorded a video demonstrating our XD prototype and delivered these to our client.</p>
-				</div>
-
-				<div class="project-bullet-grid">
-					<div>
-						<h4>Key Features</h4>
-						<ul>
-							<li>User-centered design</li>
-							<li>Interactive feedback</li>
-							<li>Professional design report</li>
-							<li>Client collaboration</li>
-						</ul>
-					</div>
-					<div class="github-links">
-						<div id="app-links">
-							<a
-									href="https://vimeo.com/363127742" target="_blank">Prototype Demo</a>
-								<h4>|</h4>
-								<a
-									href="img/SyllabusArchive_DesignReport.pdf" target="_blank">Design Report</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</article>
-		<article id="habits" class="project-item">
-			<div class="project-grid">
-				<div>
-					<div class="project-overview">
-						<h1 class="project-title">HABITS</h1>
-						<h3>iOS and Android Mobile Application</h3>
-						<p class="project-caption">A multi-view application created for both iOS and Android devices.
-						</p>
-					</div>
-					<div class="project-description">
-						<p>Habits is a fully functional application that I created for both iOS and Android devices.
-							The app is geared towards users that have undesirable habits that cost them money. </p>
-						<p>Users can enter the details for any sort of habit and define how regularly they engage in
-							it and what it costs them. The app then displays how long it has been since the habit
-							has been indulged and how much money they have "saved" as a result. The user can self
-							report when they indulge the habit to reset the "money saved" and "time since" data.
-							Details about the habit can be changed at any time.</p>
-						<p>Both the iOS and Android versions are nearly identical functionality that includes
-							multiple views/activities that pass data and data persistence. I took platform-specific
-							UI/UX
-							differences into account for each version.</p>
-					</div>
-
-					<div class="project-bullet-grid">
-						<div>
-							<h4>Key Features</h4>
-							<ul>
-								<li>Data Persistence</li>
-								<li>Multiple Views/Activites</li>
-								<li>TableViews/ListViews</li>
-								<li>Adaptable Layout</li>
-								<li>Custom Class for Data</li>
-							</ul>
-						</div>
-						<div class="github-links">
-							<h4 class="link-title">GitHub</h4>
-							<div id="app-links">
-								<a
-									href="https://github.com/isheets/IsaacSheets_MAD/tree/master/projects/project1/milestone3" target="_blank">iOS</a>
-								<h4>|</h4>
-								<a
-									href="https://github.com/isheets/IsaacSheets_MAD/tree/master/projects/project2/milestone3" target="_blank">Android</a>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<div class="picture-grid">
-					<video class="app-pic" id="ios-3" controls>
-						<source src="img/habits_iOS_demo_fast.mov" type="video/mp4">
-					</video>
-				</div>
-			</div>
-		</article>
-
-		<article id="web" class="project-item">
-
-			<div class="project-overview">
-				<h1 class="project-title">DRIVING SUCKS!</h1>
-				<h3>Interactive Web Narrative</h3>
-				<p class="project-caption">An interactive web narrative that points out the downsides of driving and
-					provides alternatives.</p>
-				<a href="http://creative.colorado.edu/~issh3780/fwd/projects/project2/index.html" target="_blank">Check it out!</a>
-			</div>
-
-			<div class="project-description">
-
-				<p>Driving Sucks is a project that I created to shed light on the negative impacts of
-					driving, both on the driver as well as on the community.</p>
-				<p>The narrative animates based on the users scroll position and first provides some
-					arguments against driving before providing some alternatives.</p>
-				<p>At the end there is a tool that utilizes an API called Targomo to show how far a user can
-					travel by foot, bike, or bus within a given timeframe. The point of this tool is to
-					reveal the distance the user can go without a car in a relatively small amount of time.
-				</p>
-			</div>
-			<div class="project-bullets">
-				<h4 id="driving-features-title">Key Features</h4>
-				<ul>
-					<li>Interactivity</li>
-					<li>API usage</li>
-					<li>SVG animations</li>
-				</ul>
-			</div>
-		</article>
-
-		<article id="react" class="project-item">
-
-
-			<div class="project-overview">
-				<h1 class="project-title">THE FINALS COUNTDOWN</h1>
-				<h3>A React Web App</h3>
-				<p class="project-caption">A React app to track and plan for final exams.</p>
-				<a href="http://creative.colorado.edu/~issh3780/fwd/projects/project3/milestone3/index.html" id="react-link" target="_blank">Check it out!</a>
-			</div>
-
-
-			<div id="react-description">
-				<p>The Finals Countdown is a React web app that I developed with team of three. The
-					inspiration behind the product the desire to compartmentalize and prioritize studying
-					based on how soon a final exam will be for a given course. </p>
-				<p>Users can input when their final exam will be and then add specific to-do items to each
-					final. Our app then begins a countdown to the finals so that the user can keep track of
-					what studying should be done first.</p>
-				<p>We used Firebase to persist the user's data and the application was built entirely with
-					reusable React components. Our team used GitHub for version control and collaboration,
-					and adhered to the Agile development process to increase efficiency.</p>
-			</div>
-
-			<div class="project-bullets">
-				<h4 id="react-features-title">Key Features</h4>
-				<ul id="react-features">
-					<li>Built with React</li>
-					<li>Firebase</li>
-					<li>Agile development</li>
-					<li>Group collaboration via GitHub</li>
-				</ul>
-			</div>
-
-		</article>
+	<section id="projects">
+		<h2 id='twitter-emojis' class='project-thumb'>TWITTER EMOJIS</h2>
+		<h2 id="syllabus-archive" class='project-thumb'>CU SYLLABUS ARCHIVE</h2>
+		<h2 id="habits" class='project-thumb'>HABITS</h2>
+		<h2 id="driving-sucks" class='project-thumb'>DRIVING SUCKS!</h2>
+		<h2 id="finals-countdown" class='project-thumb'>FINALS COUNTDOWN</h2>
 	</section>
 </body>
 
