@@ -178,8 +178,10 @@ ul {
 	cursor: pointer;
 	border: 2px solid var(--yellow);
 	margin: 5px;
-	padding: 5px;
+	margin-bottom: 20px;
+	padding: 10px;
 	transition: all .2s ease;
+	background-color: var(--lt);
 }
 
 .project-thumb:hover {
@@ -198,7 +200,7 @@ ul {
 
 .thumbnail-title {
 	position: relative;
-	top: -10px;
+	top: -20px;
 }
 
 a {

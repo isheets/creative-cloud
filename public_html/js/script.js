@@ -11,18 +11,24 @@ window.addEventListener('DOMContentLoaded', (event) => {
 //opens lightbox with content for requested project
 var openProjectContent = (e) => {
 
+
     //determine which project was clicked on
     let projectClicked = null;
+    let liElement = null;
     if (e.target.localName !== "li") {
         for (let parent of e.path) {
             if (parent.localName === "li") {
                 projectClicked = parent.id;
+                liElement = parent;
             }
         }
     }
     else {
         projectClicked = e.srcElement.id;
+        liElement = e.srcElement;
     }
+
+    let projectLink = liElement.getElementsByClassName('thumbnail-title')[0];
 
 
     //choose what content to render based on the project clicked
@@ -51,7 +57,8 @@ var openProjectContent = (e) => {
     if (contentToRender !== null) {
         SimpleLightbox.open({
             content: contentToRender,
-            elementClass: 'slbContentEl'
+            elementClass: 'slbContentEl',
+            beforeClose: () => {returnFocus(projectLink)}
         });
 
         let projectTitle = document.getElementsByClassName('project-title')[0];
@@ -68,6 +75,10 @@ var openProjectContent = (e) => {
     }
 
 
+}
+
+var returnFocus = (prevActive) => {
+    prevActive.focus();
 }
 
 
