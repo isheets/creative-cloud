@@ -9,14 +9,15 @@
 	box-sizing: border-box;
 } 
 
-/* 
-blue: #11929E
-yellow: #FFF9B1
-green: #9AB285
-pink: #FFB896
-brown: #B2A589
-grey: #212628
-*/
+:root {
+	--blue: #11929E;
+	--yellow: #FFF9B1;
+	--green: #9AB285;
+	--pink: #FFB896;
+	--brown: #B2A589;
+	--grey: #212628;
+	--lt: rgba(217, 210, 196, 1);
+}
 
 body {
 	/* background-image: url(../img/bg.svg);
@@ -36,8 +37,20 @@ section {
 	/* outline: solid 2px white; */
 }
 
+
+/* lightbox container */
+.slbContentOuter {
+	max-width: 80%;
+	margin: auto;
+}
+
+.slbContent {
+	padding: 5%;
+	border: 3px solid var(--pink);
+	background-color: var(--lt) !important;
+}
+
 .project-item {
-	max-width: 100%;
 }
 
 .project-grid {
@@ -45,9 +58,6 @@ section {
 	max-width: 100%;
 	grid-template-columns: 66% 34%;
 }
-
-
-
 
 #links {
 	display:flex;
@@ -68,40 +78,7 @@ section {
 	margin: 20px;
 }
 
-#content {
-	padding-left: 0;
-	margin-left: 0px;
-	background: none;
-}
-
-#content > article {
-	padding: 30px;
-	background-color: rgba(255, 255, 255, 0.5);
-	padding-bottom: 20px;
-	padding-right: 20px;
-}
-
-#nav {
-	padding: 0px;
-	padding-top: 10px;
-	padding-left: 10px;
-	margin-right: 0px;
-	background: none;
-}
-
-#nav > ul > li {
-	margin-bottom: 10px;
-}
-
-#nav > ul > li > a {
-	padding-left: 10px;
-	line-height: 100%;
-	padding-top: 2%;
-}
-
-.project-icon {
-	width: 50px;
-}
+#projects
 
 .project-bullet-grid {
 	display: grid;
@@ -173,7 +150,7 @@ h4 {
 p {
 	font-family: 'Raleway', sans-serif;
 	color: #212628;
-	line-height: 120%;
+	line-height: 150%;
 	margin-bottom: 5px;
 }
 
@@ -186,12 +163,42 @@ ul {
 
 }
 
-.project-list {
+#projects {
+	grid-column: 1/3;
+}
+
+#project-list {
+	width: 100%;
 	list-style: none;
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
 }
 
 .project-thumb {
-	border: 1px solid yellow;
+	cursor: pointer;
+	border: 2px solid var(--yellow);
+	margin: 5px;
+	padding: 5px;
+	transition: all .2s ease;
+}
+
+.project-thumb:hover {
+	background-color: var(--grey);
+	border: 2px solid var(--pink);
+}
+
+.project-thumb:hover > p {
+	color: white;
+}
+
+.project-thumb:hover > a {
+	color: white;
+	background-color: var(--grey);
+}
+
+.thumbnail-title {
+	position: relative;
+	top: -10px;
 }
 
 a {
@@ -201,12 +208,13 @@ a {
 	color: #212628;
 	background-color: #FFF9B1;
 	padding:5px;
+	transition: all .2s ease;
 }
 
 /* mouse over link */
 a:hover {
-	color: #FFF9B1;
-	background: none;
+	color: white;
+	background-color: var(--grey);
 }
 
 /* selected link */
@@ -215,26 +223,9 @@ a:active {
 	background: none;
 }
 
-a:focus {
+*:focus {
 	outline: none;
-}
-/* this is for all tab links */
-a[role=tab] {
-	display: inline-block;
-	font-size: 225%;
-	font-family: 'Teko', sans-serif;
-	letter-spacing: 1px;
-	width: calc(100% - 10px);
-	height: 100%;
-	padding: 0px;
-}
-/* this is for the selected tab link */
-a[aria-selected=true], a[aria-selected=true]:hover, a[aria-selected=true]:active {
-	background-color: rgba(255, 255, 255, 0.5);
-	width: 100%;
-	margin-right: 0px;
-	color: #212628;
-	cursor: default;
+	border: 2px dashed var(--blue);
 }
 
 h4 > a {

@@ -2,7 +2,7 @@ var twitterEmojiContent = `
 <article id="twitter-emoji-cloud" class="project-item">
 <div>
     <div class="project-overview">
-        <h1 class="project-title">TWITTER EMOJI CLOUD</h1>
+        <h2 class="project-title" id='twitter-emoji-title' tabindex="-1">TWITTER EMOJI CLOUD</h2>
         <h3>Full Stack Data Project</h3>
         <p class="project-caption">A group project that live-streamed data from the Twitter API and
             showed various visualizations.
