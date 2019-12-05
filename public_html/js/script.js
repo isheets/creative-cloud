@@ -66,7 +66,6 @@ var openProjectContent = (e) => {
         modal.setAttribute("aria-modal", "true");
         modal.setAttribute("aria-labeledby", projectTitle.id);
         trapFocus(modal);
-        modal.focus();
 
         //add label to close button for screenreader
         let closeButton = document.getElementsByClassName("slbCloseBtn")[0];
@@ -88,6 +87,10 @@ var trapFocus = (element, namespace) => {
         firstFocusableEl = focusableEls[0];
     lastFocusableEl = focusableEls[focusableEls.length - 1];
     KEYCODE_TAB = 9;
+
+    document.activeElement.blur();
+
+    firstFocusableEl.focus();
 
     element.addEventListener('keydown', function (e) {
         var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
