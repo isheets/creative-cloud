@@ -4,13 +4,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
     let projectThumbs = document.getElementsByClassName('project-thumb');
 
     for (let thumb of projectThumbs) {
+        //thumb.addEventListener('keydown', openProjectContent);
         thumb.addEventListener('click', openProjectContent);
     }
 });
 
 //opens lightbox with content for requested project
 var openProjectContent = (e) => {
-
+    e.preventDefault();
+    console.log(e);
 
     //determine which project was clicked on
     let projectClicked = null;
