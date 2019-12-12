@@ -1,5 +1,3 @@
-console.log("js working");
-
 window.addEventListener('DOMContentLoaded', (event) => {
     let projectThumbs = document.getElementsByClassName('project-thumb');
 
@@ -12,8 +10,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 //opens lightbox with content for requested project
 var openProjectContent = (e) => {
     e.preventDefault();
-    console.log(e);
-
     //determine which project was clicked on
     let projectClicked = null;
     let liElement = null;
@@ -29,6 +25,8 @@ var openProjectContent = (e) => {
         projectClicked = e.srcElement.id;
         liElement = e.srcElement;
     }
+
+    
 
     let projectLink = liElement.getElementsByClassName('thumbnail-title')[0];
 
@@ -47,12 +45,13 @@ var openProjectContent = (e) => {
             break;
         case "driving-sucks":
             contentToRender = drivingSucksContent;
+            break;
         case "finals-countdown":
             contentToRender = finalsCountdownContent;
+            break;
         default:
             break;
     }
-
 
     //render the content in lightbox if we have it
     //TODO: need to add callback function for on close to return focus to closed link
@@ -68,6 +67,7 @@ var openProjectContent = (e) => {
         modal.setAttribute("aria-modal", "true");
         modal.setAttribute("aria-labeledby", projectTitle.id);
         trapFocus(modal);
+        projectTitle.focus();
 
         //add label to close button for screenreader
         let closeButton = document.getElementsByClassName("slbCloseBtn")[0];
@@ -91,8 +91,6 @@ var trapFocus = (element, namespace) => {
     KEYCODE_TAB = 9;
 
     document.activeElement.blur();
-
-    firstFocusableEl.focus();
 
     element.addEventListener('keydown', function (e) {
         var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);

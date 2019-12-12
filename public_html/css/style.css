@@ -69,16 +69,14 @@ section {
 #about {
 	grid-column: 1/3;
 	background-color: rgba(255, 255, 255, 0.5);
-	/* box-shadow: 
-		-2px -2px 1px #11929E,
-		-4px -4px 2px #FFF9B1,
-		-6px -6px 3px #9AB285,
-		-8px -8px 4px #FFB896; */
 	border-top: solid 5px #FFB896;
 	margin: 20px;
+	margin-bottom: 10px;
 }
 
-#projects
+#projects {
+
+}
 
 .project-bullet-grid {
 	display: grid;
@@ -105,6 +103,7 @@ section {
 	display: flex;
 	margin-top: 0;
 }
+
 
 .app-pic {
 	object-fit: contain;
@@ -143,10 +142,6 @@ h4 {
 	color: #212628;
 }
 
-.top-link {
-	padding-right: 10px;
-}
-
 p {
 	font-family: 'Raleway', sans-serif;
 	color: #212628;
@@ -165,6 +160,8 @@ ul {
 
 #projects {
 	grid-column: 1/3;
+	border: 2px solid var(--pink);
+	margin: 20px;
 }
 
 #project-list {
@@ -210,7 +207,7 @@ a {
 	color: #212628;
 	background-color: #FFF9B1;
 	padding:5px;
-	transition: all .5s ease-out;
+	transition: color .4s ease-out, background-color .4s ease-out;
 }
 
 /* mouse over link */
@@ -230,24 +227,77 @@ a:active {
 	border: 2px dashed var(--blue);
 }
 
-h4 > a {
+.top-link {
 	text-align: right;
-	font-size: 120%;
+	font-size: 110%;
 	font-family: 'Overpass Mono', monospace;
 	color: #212628;
 	display: inline-block;
 	width: 100%;
 	padding: 3px;
+	margin: 1px;
+	letter-spacing: 1px;
+}
+
+#project-list-title {
+
+	margin-left: 5px;
+	margin-bottom: 10px;
 }
 
 /*responsive app*/
 @media only screen and (max-width: 1150px) {
 	.project-grid {
-		grid-template-columns: 100%;
+		display: flex;
+		flex-direction: column;
+	}	
+	.picture-grid {
+		
+		max-width: 50%;
+		margin: auto;
+		margin-top: 10px;
 	}
-	
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 830px) {
+	body{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
 
-		}
+	section {
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	#about {
+		margin-top: 10px;
+	}
+
+	.top-link {
+		text-align: left;
+	}
+
+	#logo {
+		margin-top: 10px;
+		max-width: 50%;
+	}
+
+	#project-list {
+		grid-template-columns: 50% 50%;
+	}
+
+	.slbContentOuter {
+		max-width: 90%;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.slbContentOuter {
+		max-width: 95%;
+	}
+	#project-list {
+		grid-template-columns: 100%;
+	}
+}

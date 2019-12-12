@@ -2,9 +2,9 @@ var syllabusArchiveContent = `
 <article id="syllabus-archive" class="project-item">
 <div>
     <div class="project-overview">
-        <h1 class="project-title">CU SYLLABUS ARCHIVE</h1>
+        <h2 class="project-title" tabindex="-1">CU SYLLABUS ARCHIVE</h2>
         <h3>User Experience Design</h3>
-        <p class="project-caption">A group user experience design consulting project for the CU Student Services Portfolio Manager</p>
+        <p class="project-caption">A group user experience consulting project for the CU Student Services Portfolio Manager</p>
     </div>
     <div class="project-description">
         <p>Throughout the Spring 2019 semester I worked with a team of two other students to research, design, and user test a new user experience for the CU Syllabus Archive for our client Jacie Moriyama, CU Student Services Portfolio Manager</p>

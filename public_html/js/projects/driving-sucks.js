@@ -2,7 +2,7 @@ var drivingSucksContent = `
 <article id="web" class="project-item">
 
     <div class="project-overview">
-        <h1 class="project-title">DRIVING SUCKS!</h1>
+        <h2 class="project-title" tabindex="-1">DRIVING SUCKS!</h2>
         <h3>Interactive Web Narrative</h3>
         <p class="project-caption">An interactive web narrative that points out the downsides of driving and
             provides alternatives.</p>

@@ -1,7 +1,7 @@
 var finalsCountdownContent = `
 <article id="react" class="project-item">
     <div class="project-overview">
-        <h1 class="project-title">THE FINALS COUNTDOWN</h1>
+        <h2 class="project-title" tabindex="-1">THE FINALS COUNTDOWN</h2>
         <h3>A React Web App</h3>
         <p class="project-caption">A React app to track and plan for final exams.</p>
         <a href="http://creative.colorado.edu/~issh3780/fwd/projects/project3/milestone3/index.html"

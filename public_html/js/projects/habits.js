@@ -1,9 +1,9 @@
 var habitsContent = `
 <article id="habits" class="project-item">
-<div class="project-grid">
+<div>
     <div>
         <div class="project-overview">
-            <h1 class="project-title">HABITS</h1>
+            <h2 class="project-title" tabindex="-1">HABITS</h2>
             <h3>iOS and Android Mobile Application</h3>
             <p class="project-caption">A multi-view application created for both iOS and Android devices.
             </p>
@@ -42,14 +42,10 @@ var habitsContent = `
                     <a href="https://github.com/isheets/IsaacSheets_MAD/tree/master/projects/project2/milestone3"
                         target="_blank">Android</a>
                 </div>
+
             </div>
         </div>
 
-    </div>
-    <div class="picture-grid">
-        <video class="app-pic" id="ios-3" controls>
-            <source src="img/habits_iOS_demo_fast.mov" type="video/mp4">
-        </video>
     </div>
 </div>
 </article>
